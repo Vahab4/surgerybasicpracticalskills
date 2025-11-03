@@ -1,0 +1,37 @@
+<!-- quiz.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз: Симптомы Хирургии</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎯 Квиз по Симптому</h1>
+            <p class="subtitle">Выберите все карты, относящиеся к этому симптому. Остальные — отвлекающие из других симптомов!</p>
+        </header>
+        
+        <div id="symptomDisplay" class="symptom-display">
+            <h2 id="symptomTitle" class="symptom-title">Загрузка...</h2>
+            <div class="disease-info">
+                <strong>Заболевание:</strong> <span id="diseaseName">Загрузка...</span>
+            </div>
+            <p class="puzzle-instructions">Выберите все факты, относящиеся к этому симптому.</p>
+            <div id="factPuzzle" class="fact-puzzle"></div>
+            <button id="checkBtn" onclick="checkAnswers()" class="check-btn" style="display: none;">✅ Проверить Ответы</button>
+            <div id="result" class="result" style="display: none;"></div>
+            <button onclick="backToHome()" class="reset-btn">🏠 На Главную</button>
+        </div>
+        
+        <footer class="footer">
+            <p>Подготовка к экзамену по хирургии | СеЧеновский Университет</p>
+        </footer>
+    </div>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>
